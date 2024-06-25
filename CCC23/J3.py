@@ -9,8 +9,6 @@ for schedule in schlist:
         if c == "Y":
             daycount[day] += 1
             
-# print(daycount.index(max(daycount))+1)
-
 bestdays = []
 max = max(daycount)
 for i, day in enumerate(daycount):

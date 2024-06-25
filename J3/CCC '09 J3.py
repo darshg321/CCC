@@ -5,6 +5,8 @@ def conv(diff):
         return (time + diff) + 2400
     elif time + diff >= 2400:
         return (time + diff) - 2400
+    elif int(str(time + diff)[-2:]) > 60:
+        return time + diff - 60 + 100
     return time + diff
 
 
